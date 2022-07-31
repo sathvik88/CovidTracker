@@ -16,6 +16,9 @@
 		2CE25CD228945F56009FABA7 /* CovidTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE25CD128945F56009FABA7 /* CovidTrackerTests.swift */; };
 		2CE25CDC28945F56009FABA7 /* CovidTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE25CDB28945F56009FABA7 /* CovidTrackerUITests.swift */; };
 		2CE25CDE28945F56009FABA7 /* CovidTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE25CDD28945F56009FABA7 /* CovidTrackerUITestsLaunchTests.swift */; };
+		2CE25CEB28946039009FABA7 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE25CEA28946039009FABA7 /* FilterViewController.swift */; };
+		2CE25CED28946121009FABA7 /* CovidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE25CEC28946121009FABA7 /* CovidAPI.swift */; };
+		2CE25CF12895F9C7009FABA7 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 2CE25CF02895F9C7009FABA7 /* Charts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,8 @@
 		2CE25CD728945F56009FABA7 /* CovidTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovidTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE25CDB28945F56009FABA7 /* CovidTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidTrackerUITests.swift; sourceTree = "<group>"; };
 		2CE25CDD28945F56009FABA7 /* CovidTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2CE25CEA28946039009FABA7 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		2CE25CEC28946121009FABA7 /* CovidAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE25CF12895F9C7009FABA7 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +105,9 @@
 		2CE25CB928945F54009FABA7 /* CovidTracker */ = {
 			isa = PBXGroup;
 			children = (
+				2CE25CEE2894612B009FABA7 /* Services */,
 				2CE25CBA28945F54009FABA7 /* AppDelegate.swift */,
+				2CE25CEA28946039009FABA7 /* FilterViewController.swift */,
 				2CE25CBC28945F54009FABA7 /* SceneDelegate.swift */,
 				2CE25CBE28945F54009FABA7 /* ViewController.swift */,
 				2CE25CC028945F54009FABA7 /* Main.storyboard */,
@@ -127,6 +135,14 @@
 			path = CovidTrackerUITests;
 			sourceTree = "<group>";
 		};
+		2CE25CEE2894612B009FABA7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2CE25CEC28946121009FABA7 /* CovidAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +159,9 @@
 			dependencies = (
 			);
 			name = CovidTracker;
+			packageProductDependencies = (
+				2CE25CF02895F9C7009FABA7 /* Charts */,
+			);
 			productName = CovidTracker;
 			productReference = 2CE25CB728945F54009FABA7 /* CovidTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +234,9 @@
 				Base,
 			);
 			mainGroup = 2CE25CAE28945F54009FABA7;
+			packageReferences = (
+				2CE25CEF2895F9C7009FABA7 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 2CE25CB828945F54009FABA7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE25CED28946121009FABA7 /* CovidAPI.swift in Sources */,
 				2CE25CBF28945F54009FABA7 /* ViewController.swift in Sources */,
 				2CE25CBB28945F54009FABA7 /* AppDelegate.swift in Sources */,
+				2CE25CEB28946039009FABA7 /* FilterViewController.swift in Sources */,
 				2CE25CBD28945F54009FABA7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -602,6 +626,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2CE25CEF2895F9C7009FABA7 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2CE25CF02895F9C7009FABA7 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CE25CEF2895F9C7009FABA7 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2CE25CAF28945F54009FABA7 /* Project object */;
 }
