@@ -1,5 +1,5 @@
 # CovidTracker
-iOS app created using StoryBoards for Swift. This app allows users to too relevant covid cases for their state and other states as well as the national cases. This application presents the data in a table and in a bar chart.
+iOS app created using StoryBoards for Swift. This app allows users to get the number of Covid-19 cases for their state and other states as well as the national amount of cases. This application presents the data in a table and in a bar chart.
 
 Homescreen:
 
