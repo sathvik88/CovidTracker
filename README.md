@@ -3,7 +3,7 @@ iOS app created using StoryBoards for Swift. This app allows users to get the nu
 
 Homescreen:
 
-![Simulator Screen Shot - iPhone 8 - 2022-07-30 at 20 26 46](https://user-images.githubusercontent.com/55303890/182004591-2ebbd25a-a6db-4b6a-9aad-33be08f81df2.png)
+![Simulator Screen Shot - iPhone 8 - 2022-07-30 at 20 26 46](https://user-images.githubusercontent.com/55303890/182004591-2ebbd25a-a6db-4b6a-9aad-33be08f81df2.png | width=100) 
 
 State Selection Screen:
 
