@@ -3,6 +3,7 @@ iOS app created using StoryBoards for Swift. This app allows users to get the nu
 
 <p align="row">
 <img src="https://user-images.githubusercontent.com/55303890/182004597-14a98832-216a-4926-94af-86911a45f8c4.png" width="200" height="400">
+  <p></p>
   
 
 <img align=”middle” src="https://user-images.githubusercontent.com/55303890/182004594-1ba67322-fa8d-4cc9-8f4f-b27ed65d9cff.png" width="200" height="400">
